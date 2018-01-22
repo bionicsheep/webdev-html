@@ -1,0 +1,37 @@
+table, th, td{
+	border: 1px solid black;
+}
+
+th, td{
+	padding: 8px;
+}
+
+p{
+	display:inline;
+}
+
+.red-p{
+	color: red;
+}
+
+.orange-p{
+	color: orange;
+}
+
+.yellow-p{
+	color: yellow;
+}
+
+.green-p{
+	color: green;
+}
+
+.blue-p{
+	color: blue;
+}
+
+.indigo-p{
+	color: indigo;
+}
+
+

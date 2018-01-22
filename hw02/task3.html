@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="task3_stylesheet.css">
+	</head>
+	<body>
+		<h1>HW02 Task Three</h1>
+		<br>
+		<div class="contentscontainer">
+			<div class="index">
+				<div class="links-box">
+					<br>
+					<a id="link1" href="javascript:;">Lorem Ipsem</a>
+					<br>
+					<br>
+					<a id="link2" href="javascript:;">99 Bottles</a>
+					<br>
+					<br>
+					<a id="link3" href="javascript:;">Last Thing</a>
+				</div>
+			</div>
+			<div class="content">
+				<pre id="text-box"></pre>
+			</div>
+		</div>
+
+		<script>
+		function firstLink() {
+			var textbox = document.getElementById("text-box");
+			var ipsumText = "Lorem ipsum dolor sit amet, veniam quaeque ut vel, officiis accusata scriptorem ad duo. Vix an harum tollit instructior. Viderer offendit duo et, vix ea quem albucius legendos, iisque latine eu nam. Sed quis justo ei, vel malis euripidis at. Tale viderer maiestatis ne est. Sed debet facilisis ad. \n \nMel id wisi dispu tando, mei fastidii voluptaria id. His justo ubique interpretaris an. Eu mel atqui consulatu. Ex quo hinc suscipit incorrupte, vis no esse appetere voluptatum. Mei ad semper detraxit senserit, delectus tacimates signiferumque ne usu. \n \nCu cum cibo eripuit, pri simul evertitur at, an vis putant eleifend urbanitas. Mei nobis expetendis reprimique ex. Mei ex aliquip mediocrem definitiones, vix ei porro volutpat. Vim eros fastidii no, sea vidit lorem fugit te. Atqui partem erroribus ut mel, graeci verear ex duo. Sit vivendo atomorum sententiae eu, eos deseruisse scribentur id. \n \nWisi efficiantur eum et. Unum efficiantur pri te, ex dolore iisque commodo eos. Modus nobis suscipit mea te. Eius legimus delectus pro te.";
+
+			textbox.textContent = ipsumText;
+		}
+		
+		var link1 = document.getElementById("link1");
+		link1.onclick = firstLink;
+
+		firstLink(); //to fill it for the first load
+		</script>
+
+		<script>
+		function secondLink() {
+			var textbox = document.getElementById("text-box");
+			var beerText = "99 bottles of beer on the wall, 99 bottles of beer. \nTake one down, pass it around, 98 bottles of beer on the wall... \n\n98 bottles of beer on the wall, 98 bottles of beer.\nTake one down, pass it around, 97 bottles of beer on the wall... \n\n97 bottles of beer on the wall, 97 bottles of beer. \nTake one down, pass it around, 96 bottles of beer on the wall...\n\n96 bottles of beer on the wall, 96 bottles of beer.\nTake one down, pass it around, 95 bottles of beer on the wall...";
+			
+			textbox.textContent = beerText;
+		}
+		
+		var link2 = document.getElementById("link2");
+		link2.onclick = secondLink;
+		</script>
+
+		<script>
+		function thirdLink() {
+			var textbox = document.getElementById("text-box");
+			textbox.textContent = "This is the third thing";
+		}
+		
+		var link3 = document.getElementById("link3");
+		link3.onclick = thirdLink;
+		</script>
+	</body>
+</html>
